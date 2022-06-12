@@ -1,8 +1,7 @@
 /* BASICS */
 
-body, h1, h2, h3, h4, h5, h6, small {
+body, h1, h2, h3, h4, h5, h6, p, small {
     font-family : Helvetica, Arial, sans-serif;
-    font-size   : 20px;
     line-height : 1.4em;
     color       : #000;
     font-weight : 300;
@@ -11,12 +10,23 @@ body, h1, h2, h3, h4, h5, h6, small {
 
 h1,h2 {
     font-weight : bold;
+    font-size   : 20px;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
 }
 
-small {
+h3 {
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+p {
     font-size   : 16px;
+    margin-bottom : 0px;
+}
+
+small {
+    font-size   : 14px;
 }
 
 
@@ -46,9 +56,7 @@ a {
     transition         : all 0.3s ease 0s;
 }
 
-p {
-    margin-bottom : 0px;
-}
+
 
 ul {
     padding: 2px;
@@ -98,6 +106,8 @@ section {
     flex: 1 1;
     align-self: flex-start;
     position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
   
 .main-column {
