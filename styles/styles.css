@@ -47,9 +47,9 @@ small {
     width: auto;
 }
 
-.headshot {
-    border-radius: 35%;
-    opacity: .3;
+#headshot {
+    border-radius: 10%;
+    opacity: .95;
 }
 
 /* LINKS */
