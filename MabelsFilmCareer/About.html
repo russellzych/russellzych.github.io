@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Mabel's Film Career</title>
+<link rel"shortcut icon" type="image/png" href="">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header>
+        <h1>Mabel's Film Career</h1>
+        <p><small>A Digital Humanities Project <br> in Seven Thrilling Acts! </br> </small> <br> by Russell Zych, MLIS '22</p>
+        <p class="view"><a href="index.html"> Home </a></p>
+        <p class="view"><a href="About.html">☞ Prologue: About </a></p>
+        <p class="view"><a href="Biography.html"> Act I: Biography </a></p>
+        <p class="view"><a href="Studios.html"> Act II: Studios </a></p>
+        <p class="view"><a href="Filmography.html"> Act III: Directors  </a></p>
+        <p class="view"><a href="OnScreen.html"> Act IV: Performances </a></p>
+        <p class="view"><a href="Words.html"> Act V: Titles </a></p>
+        <p class="view"><a href="Legacy.html"> Act VI: Legacy and Scholarship </a></p>
+        <p class="view"><a href="Missing.html"> Act VII: Missing Data and Other Considerations </a></p>
+        <p class="view"><a href="Bibliography.html"> Epilogue: Bibliography </a></p>
+
+      </header>
+
+  <section>
+      <h1> About the Project and Methods</h1>
+        <p>
+          The initial goal for this project was to ground analysis exlcusiely in filmography data. That quickly became too limiting. Still, I have made a point to avoid unneeded extrapolation or speculation on Normand’s personal life, secrets, feuds, or quirks. Below I account for the sources, processing, and presentation that has resulted in the final product you see here.
+        </p>
+
+  <h2> Sources </h2>
+  <h3>~Filmographies</h3>
+  <p>
+   Preliminary filmography records for this project were copied from Mabel Normand’s <a href="https://www.imdb.com/name/nm0635667/">IMDb page</a> using the web scraping application <a href="https://www.parsehub.com/">ParseHub</a>. While IMDb was not an ideal source, it had the structure and breadth that would work best, making it the best starting point. As the information hosted on IMDb was not entirely reliable or consistant, I compared and combined it with the <a href="https://wfpp.columbia.edu/pioneer/ccp-mabel-normand/#filmography">filmography</a> that Simon Joyce and Jennifer Putzi compile in their Women Film Pioneers Project entry on Normand, but they have been more conservative in their presentation (omitting information like studio affiliation for non-extant films, which I have kept because it is relevant to my anaylsis and reasonably verifiable).
+
+  <br></br>
+
+  I also compared the data against the filmographies and narratives given by biographers Betty Fussel, and William Thomas Sherman. Dealing with any apparent discrepancies, of which there were very few, I have deferred to the Women Film Pioneers Project (to the extent possible) as it seems to me to be the most thoroughly researched compilation. For more on the limitations of this data set, see <a href="Missing.html">Act VII</a>.
+</p>
+
+<h3>~Posters, Photos, and Films</h3>
+<p>
+   Because certain artifacts, like posters, notices, images, and videos were important to giving a full sense of Normand’s career, I have also embedded videos from YouTube and images from the Lantern database, a project of the University of Wisconsin-Madison’s Media History Digital Library (MDHL). I also used MDHL’s <a href="http://search.projectarclight.org/about.html">Project Arclight</a> to export information about the frequency of Normand’s mention in Hollywood trade papers and magazines to compare with <a href="https://books.google.com/ngrams/info">Google Ngram Viewer</a> results in <a href="Legacy.html">Act VI</a>.
+</p>
+
+<h3>~Secondary Sources and Scholarship</h3>
+<p>
+    I consulted many secondary sources of information about Normand's life and career for this project and synthesized a lot of their observations in my commentary, but tried to limit the bearing of their more colorful stories or speculations on the conclusions I drew from her filmography. For the sake of concision and straightforward presentation, information about Normand’s life or career that can be found in multiple sources is treated as common knowledge. Direct quotation was made only when absolutely necessary, or to comment on the scholarship itself. For further inquiry please consult the scholarship listed in the <a href="Bibliography.html">epilogue</a>.
+</p>
+
+<h2> Processed </h2>
+  <p>
+  The initial ParseHub collection from IMDb was clustered and <a href="http://curatingmenus.org/articles/against-cleaning/">“cleaned”</a> in <a href="https://openrefine.org/">OpenRefine</a>. As mentioned above, the filmography data was checked against a handful of other sources and corrected or expanded where necessary. Average durations for Normand’s films each year were calculated directly in <a href="https://public.tableau.com/en-us/s/">Tableau Public</a>.
+     <br></br>
+The filmography was also used to create an edge and node list for the network mapping in <a href="Filmography.html">Act III</a>. I consulted <a href="https://github.com/miriamposner/cytoscape_tutorials/blob/master/get-a-unimodal-network.md">this tutorial</a> to convert a bimodal edgelist into a unimodal edgelist in R studio.
+  <br></br>
+Text analysis of Normand's film titles in <a href="Words.html">Act V</a> was performed with <a href="https://voyant-tools.org/">Voyant Tools</a>.
+   <br></br>
+While the <a href="https://knightlab.northwestern.edu/projects/#storytelling">Knight Labs story tools</a> fill in some biographical information and context about film production at the time, it was important to me that this project make a point to see what conclusions could be grounded specifically in Normand’s filmography data and the films themselves rather than accounts of her personal life and suspicions about her habits or motivations.
+ </p>
+
+<h2> Presented </h2>
+
+<p>
+  This webpage is hosted on <a href="https://pages.github.com/">GitHub Pages</a>. I have altered the “minimal’ template, making the site black and white and tracking down a font that suggests a silent film intertitle.
+   <br></br>
+   Visualizations were created in Tableau Public and <a href="https://flourish.studio/">Flourish</a>. The Timeline, StoryMap, and StoryLine were created using tools available from Knight Labs. The studio timeline was created with <a href="https://time.graphics/">time.graphics</a>. Films from YouTube are embedded in <a href="OnScreen.html">Act IV</a>.
+</p>
+
+</section>
+
+<section>
+<h2> About the Author </h2>
+<p>
+I created this site and its data visualizations as a final project for Miriam Posner’s <a href="http://miriamposner.com/classes/dh201w21/">"Introduction to Digital Humanities"</a> course. This is my first time making a website and working with these tools, so please find it in your heart to excuse any errors. Any and all feedback will be graciously received at russellzych[at]ucla[dot]edu.
+ </p>
+</section>
+
+
+<footer>
+  <p><small>This project was completed for Miriam Posner's graduate-level class <a href="http://miriamposner.com/classes/dh201w21/">"Introduction to Digital Humanities"</a> at UCLA, Winter 2021.</small> </p>
+  <p><small>Hosted on GitHub Pages ☓ Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+</div>
+
+<script src="javascripts/scale.fix.js"></script>
+</body>
+</html>
