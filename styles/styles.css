@@ -38,12 +38,12 @@ small {
 
 
 .sect-odd {
-    background-color: #f2f3f4;
+    background-color: auto;
     width: auto;
 }
 
 .sect-even {
-    background-color: auto;
+    background-color: #f2f3f4;
     width: auto;
 }
 
